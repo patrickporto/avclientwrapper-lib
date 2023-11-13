@@ -1,8 +1,11 @@
 import { CANONICAL_NAME, MODULE_NAME } from "./constants.js";
 import { detectAVClient } from "./detect.js";
+import { replaceStreamTracks } from "./stream.js";
+
 
 const api = {
-    detectAVClient
+    detectAVClient,
+    replaceStreamTracks,
 }
 
 Hooks.on('init', async () => {
